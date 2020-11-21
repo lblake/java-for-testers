@@ -24,4 +24,14 @@ public class WhenCreatingObjects {
         Assert.assertEquals(fido.getAge(), 5);
 
     }
+
+    @Test
+    public void creating_a_hamster() {
+        Hamster barney =  new Hamster("Barney","Wheel", 1);
+        Assert.assertEquals(barney.getName(), "Barney");
+        Assert.assertEquals(barney.getFavoriteGame(), "Wheel");
+        Assert.assertEquals(barney.getAge(), 1);
+
+
+    }
 }
